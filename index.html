@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>IMDb API</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- start logo -->
+      <div class="logo">
+        <div class="container">
+          <p class="box1">Movie <span>World</span></p>
+          <div class="box2">
+            <div onclick="window.location.href='index.html'">Home</div>
+            <div onclick="window.location.href='trending.html'">Trending</div>
+            <div>Signup</div>
+          </div>
+        </div>
+      </div>
+      <!-- end of logo -->
+
+      <!-- ------------------------------------- -->
+      <div class="search-container">
+        <div class="search-element">
+          <h3>Search Movies</h3>
+          <input
+            type="text"
+            name=""
+            class="form-control"
+            placeholder="Search movie title"
+            id="movie-search-box"
+            onkeyup="findMovies()"
+          />
+
+          <div class="search-list" id="search-list">
+            <!-- list here -->
+            <div class="search-list-item"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+
+      <!-- result starts -->
+      <div class="container">
+        <div class="result-container">
+          <div class="result-grid" id="result-grid"></div>
+        </div>
+      </div>
+      <!-- results end -->
+    </div>
+
+    <div id="trending"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
